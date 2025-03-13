@@ -4,6 +4,7 @@ function calculate(x, y, operation) {
 }
 
 const operationOptions = ["+", "-", "*", "/"];
+let operation;
 
 do {
   // COLLECT FIRST NUMBER FROM USER
@@ -13,7 +14,7 @@ do {
   let y = parseFloat(prompt("Enter another number: "));
 
   // COLLECT OPERATION TO PERFORM (+,-,*,/) FROM USER
-  let operation = prompt(
+  operation = prompt(
     "Enter an operation (add, subtract, multiply, divide): "
   ).toLowerCase();
 
